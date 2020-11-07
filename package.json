@@ -1,0 +1,25 @@
+{
+  "name": "goit-js-hw-11-promisification",
+  "version": "1.0.0",
+  "description": "Задание 1\r Напиши функцию delay(ms), которая возвращает промис, переходящий в состояние \"resolved\" через ms миллисекунд. Значением исполнившегося промиса должно быть то кол-во миллисекунд которое передали во время вызова функции delay.",
+  "main": "index.js",
+  "dependencies": {
+    "parcel-bundler": "^1.12.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "dev": "parcel src/*.html",
+    "build": "parcel build src/*.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tetiana-Soliarova/goit-js-hw-11-promisification.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tetiana-Soliarova/goit-js-hw-11-promisification/issues"
+  },
+  "homepage": "https://github.com/Tetiana-Soliarova/goit-js-hw-11-promisification#readme"
+}
