@@ -1,8 +1,8 @@
 # goit-js-hw-11-promisification
 
-Задание 1
-Напиши функцию delay(ms), которая возвращает промис, переходящий в состояние "resolved" через ms миллисекунд. Значением исполнившегося промиса должно быть то кол-во миллисекунд которое передали во время вызова функции delay.
-
+## Задание 1 ##
+Напиши функцию `delay(ms)`, которая возвращает промис, переходящий в состояние `"resolved"` через `ms` миллисекунд. Значением исполнившегося промиса должно быть то кол-во миллисекунд которое передали во время вызова функции `delay`.
+```js
 const delay = ms => {
 // Твой код
 };
@@ -13,10 +13,10 @@ const logger = time => console.log(`Resolved after ${time}ms`);
 delay(2000).then(logger); // Resolved after 2000ms
 delay(1000).then(logger); // Resolved after 1000ms
 delay(1500).then(logger); // Resolved after 1500ms
-
-Задание 2
-Перепиши функцию toggleUserState() так, чтобы она не использовала callback-функцию callback, а принимала всего два параметра allUsers и userName и возвращала промис.
-
+```
+## Задание 2 ##
+Перепиши функцию `toggleUserState()` так, чтобы она не использовала callback-функцию `callback`, а принимала всего два параметра `allUsers` и `userName` и возвращала промис.
+```js
 const users = [
 { name: 'Mango', active: true },
 { name: 'Poly', active: false },
@@ -47,12 +47,12 @@ const logger = updatedUsers => console.table(updatedUsers);
   \*/
   toggleUserState(users, 'Mango').then(logger);
   toggleUserState(users, 'Lux').then(logger);
+```
 
 
-
-  Задание 3
-  Перепиши функцию makeTransaction() так, чтобы она не использовала callback-функции onSuccess и onError, а принимала всего один параметр transaction и возвращала промис.
-
+  ## Задание 3 ##
+  Перепиши функцию `makeTransaction()` так, чтобы она не использовала callback-функции `onSuccess` и `onError`, а принимала всего один параметр `transaction` и возвращала промис.
+```js
 const randomIntegerFromInterval = (min, max) => {
 return Math.floor(Math.random() \* (max - min + 1) + min);
 };
@@ -106,3 +106,4 @@ makeTransaction({ id: 72, amount: 75 })
 makeTransaction({ id: 73, amount: 100 })
 .then(logSuccess)
 .catch(logError);
+```
