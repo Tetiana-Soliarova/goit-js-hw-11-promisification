@@ -8,7 +8,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "dev": "parcel src/index.html",
+    "dev": "parcel index.html",
     "build": "parcel build <your entry file>"
   },
   "repository": {
